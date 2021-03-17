@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>woaks qkqh</title>
+	<link rel="stylesheet" type="text/css" href="roulette.css">
+	<script type="text/javascript" src="../lib/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.color-2.1.2.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="wrap">
+			<h1 contenteditable="true" spellcheck="false">돌리고 돌리고~ Lucky Chance~</h1>
+			<canvas width="600" height="600" class="roulette">지원하지 않는 브라우저입니다. Google Chrome 최신 버전을 사용해주세요.</canvas>
+			<div id="roll" class="button"></div>
+		</div>
+		<ul>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(139, 195, 74) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">정민우 LZ10272</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(3, 169, 244) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">김태윤 LZ10287</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(63, 81, 181) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">문범우 LZ10398</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(255, 87, 34) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">정한재 LZ10270</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(255, 87, 34) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">남종헌 LZ10288</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(205, 220, 57) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">꽝!</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(96, 125, 139) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">이현동 LZ10275</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(233, 30, 99) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">정혜훈 LZ10284</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(255, 193, 7) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">김병국 LZ10338</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(233, 30, 99) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">조성훈 LZ10273</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(76, 175, 80) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">김동환 LZ10377</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(205, 220, 57) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">꽝!</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(139, 195, 74) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">김현지 LZ10289</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(255, 235, 59) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">강동욱 LZ10416</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(103, 58, 183) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">장미영 LZ10277</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(121, 85, 72) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">황나라 LZ10276</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(156, 39, 176) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">김수현 LZ10271</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(205, 220, 57) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">꽝!</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(0, 188, 212) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">허동영 LZ10274</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(33, 150, 243) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">조성빈 LZ10286</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(3, 169, 244) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">이영종 LZ10345</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(0, 150, 136) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">심의석 LZ10265</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(244, 67, 54) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">김승신 LZ10263</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+			<li class="item" data-chance="0.61"
+				style="background: linear-gradient(to right, rgb(205, 220, 57) 11%, rgba(0, 0, 0, 0) 0%);">
+				<div class="item-title" placeholder="이름" contenteditable="true">꽝!</div>
+				<div class="item-weight" data-weight="1"></div>
+				<div class="item-weight-add">+</div>
+				<div class="item-weight-sub">-</div>
+				<div class="item-delete">X</div>
+			</li>
+		</ul>
+	</div>
+	<div id="button-tooltip" style="display: none;">
+		<div><span class="command">Alt + 클릭</span><span class="number">±100</span></div>
+		<div><span class="command">Ctrl + 클릭</span><span class="number">±10</span></div>
+		<div><span class="command">클릭</span><span class="number">±1</span></div>
+	</div>
+	<div id="result" style="display: none;"></div>
+	<script type="text/javascript" src="roulette.js"></script>
+	<script>
+		var font = '20px Hanna';
+		var font2 = font;
+	</script>
+</body>
+
+</html>
