@@ -77,7 +77,7 @@ function DEG2RAD(degree) {
 }
 
 $(document).ready(function() {
-	var $li = $('li.item');
+	var $li = $('li.item.empty');
 	var $cl = $li.clone();
 	window.createItem = function() {
 		$('ul').append($cl.clone());
@@ -517,4 +517,6 @@ $(document).on('keydown', 'h1[contenteditable]', function(e) {
 
 })();
 
-window.onload = function() { $('body > div.container > ul > li:nth-child(1) > div.item-weight-sub').click(); }
+window.onload = function() {
+	$('body > div.container > ul > li:nth-child(1) > div.item-weight-sub').click();
+}
