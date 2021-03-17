@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
+<html lang="ko"><head>
 	<meta charset="UTF-8">
 	<title>돌려돌려 돌림판</title>
 	<link rel="stylesheet" type="text/css" href="roulette.css">
@@ -9,29 +6,102 @@
 	<script type="text/javascript" src="../lib/jquery.color-2.1.2.min.js"></script>
 </head>
 
-<body>
-	<div class="container">
-		<div class="wrap">
-			<h1 contenteditable="true" spellcheck="false">행운의 돌림판</h1>
-			<canvas width="600" height="600" class="roulette">지원하지 않는 브라우저입니다. Google Chrome 최신 버전을 사용해주세요.</canvas>
-			<div id="roll" class="button"></div>
-		</div>
-		<ul>
-			<li class="item empty" data-chance="0">
-				<div class="item-title" placeholder="이름" contenteditable="true"></div>
-				<div class="item-weight" data-weight="1"></div>
-				<div class="item-weight-add">+</div>
-				<div class="item-weight-sub">-</div>
-				<div class="item-delete">X</div>
-			</li>
-		</ul>
+<body style="background: rgb(255, 255, 255);">
+<div class="container">
+	<div class="wrap">
+		<h1 contenteditable="true" spellcheck="false">행운의 돌림판</h1>
+		<canvas width="600" height="600" class="roulette">지원하지 않는 브라우저입니다. Google Chrome 최신 버전을 사용해주세요.</canvas>
+		<div id="roll" class="button" style=""></div>
 	</div>
-	<div id="button-tooltip" style="display: none;">
-		<div><span class="command">Alt + 클릭</span><span class="number">±100</span></div>
-		<div><span class="command">Ctrl + 클릭</span><span class="number">±10</span></div>
-		<div><span class="command">클릭</span><span class="number">±1</span></div>
-	</div>
-	<div id="result" style="display: none;"></div>
-	<script type="text/javascript" src="roulette.js"></script>
-</body>
-</html>
+	<ul class="">
+		<li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(76, 175, 80) 11%, rgba(0, 0, 0, 0) 0%);">
+			<div class="item-title" placeholder="이름" contenteditable="true">최근에 재밋게 본 영화</div>
+			<div class="item-weight" data-weight="1"></div>
+			<div class="item-weight-add">+</div>
+			<div class="item-weight-sub">-</div>
+			<div class="item-delete">X</div>
+		</li>
+		<li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(255, 152, 0) 11%, rgba(0, 0, 0, 0) 0%);">
+			<div class="item-title" placeholder="이름" contenteditable="true">점심 뭐 먹었어요?</div>
+			<div class="item-weight" data-weight="1"></div>
+			<div class="item-weight-add">+</div>
+			<div class="item-weight-sub">-</div>
+			<div class="item-delete">X</div>
+		</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(244, 67, 54) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">운동 하세요?</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(63, 81, 181) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">건강</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(0, 150, 136) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">취미</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(255, 193, 7) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">여행</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(96, 125, 139) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">주말 계획 / 뭐했어요?</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(103, 58, 183) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">맛집추천</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(0, 188, 212) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">올해 목표</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(255, 235, 59) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">어렸을 때 별명</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(121, 85, 72) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">자기자랑 하기</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item" data-chance="8.33" style="background: linear-gradient(to right, rgb(156, 39, 176) 11%, rgba(0, 0, 0, 0) 0%);">
+		<div class="item-title" placeholder="이름" contenteditable="true">소개팅</div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li><li class="item empty" data-chance="0">
+		<div class="item-title" placeholder="이름" contenteditable="true"></div>
+		<div class="item-weight" data-weight="1"></div>
+		<div class="item-weight-add">+</div>
+		<div class="item-weight-sub">-</div>
+		<div class="item-delete">X</div>
+	</li></ul>
+</div>
+<div id="button-tooltip" style="top: -189px; left: 1175px; display: none;">
+	<div><span class="command">Alt + 클릭</span><span class="number">±100</span></div>
+	<div><span class="command">Ctrl + 클릭</span><span class="number">±10</span></div>
+	<div><span class="command">클릭</span><span class="number">±1</span></div>
+</div>
+<div id="result" style="display: none;" class="play">취미</div>
+<script type="text/javascript" src="roulette.js"></script>
+
+
+</body></html>
