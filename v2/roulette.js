@@ -421,7 +421,7 @@ function Roulette() {
 	}
 	R.Stop = function() {
 		R.stopping = Date.now();
-		R.angularDamping = 360 * (0.5 + 0.1 * Math.random()); // 360 * (2 + Math.random());
+		R.angularDamping = 360 * (0.5 + 50 * Math.random()); // 360 * (2 + Math.random());
 	}
 
 	OnStart();
